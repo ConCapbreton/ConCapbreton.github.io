@@ -57,8 +57,7 @@ header:hover .header-icons {
     color: white;
 }
 
-main {
-    margin-top: -70px;
+.mn {
     height: 100vh;
     background-image: url(../img/sydney.jpg);
     width: 100%;
@@ -67,9 +66,57 @@ main {
     background-size: cover;
 }
 
+.mn__left, .mn__right {
+    display: none;
+}
+
+#main-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inpt {
+    display: block;
+    width: 170px;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn {
+    width: 180px;
+    box-shadow: 2px 2px 3px gray;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--luxurlysand);
+    margin-top: 5px;
+}
+
+.btn__recherche {
+    background-color: var(--luxurlygreen);
+}
+
+.btn__inspirez {
+    margin-top: 1rem;
+} 
+
 #before-footer {
     background-color: white;
-    height: 150px;
+    height: 175px;
+}
+
+#news-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 #mountains {
@@ -85,9 +132,8 @@ main {
     height: 0; 
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 50px solid black;
-    margin-top: -40px;
-    
+    border-bottom: 50px solid var(--luxurlygreen);
+    margin-top: -35px;
 }
 
 #mountain-middle {
@@ -95,8 +141,8 @@ main {
     height: 0; 
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 100px solid black;
-    margin-top: -90px;
+    border-bottom: 100px solid var(--luxurlygreen);
+    margin-top: -85px;
 }
 
 #mountain-left {
@@ -106,19 +152,52 @@ main {
     margin-left: -50px;
 }
 
-/* #snow-left {
-    background-color: white;
+.snow {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    margin-top: 5px;
+    margin-left: -10px;
 }
-#snow-middle {
-    background-color: white;
-}
-#snow-right {
-    background-color: white;
-} */
 
 footer {
-    height: 200px;
+    height: 230px;
     background-color: var(--luxurlygreen);
+}
+
+#footer-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 15px;
+}
+
+.place, .site-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-link {
+    font-weight: normal;
+}
+
+#footer-icons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: 15px auto 0 auto;
+}
+
+#footer-icons-div>svg {
+    width: 2rem;
+    height: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -136,6 +215,37 @@ footer {
     }
     main {
         margin-top: -80px;
+    }
+    footer {
+        height: 300px;
+    }
+    #news-form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .inpt {
+        width: 230px;
+        font-size: 1.1rem;
+    }
+    .btn {
+        height: 2rem;
+        width: 240px;
+        font-size: 1.1rem;
+    }
+    .place, .site-link {
+        font-size: 1.2rem;
+    }
+    #footer-icons-div {
+        margin-top: 1.5rem;
+    }
+    #footer-icons-div>svg {
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 
@@ -172,4 +282,41 @@ footer {
     header:hover nav>a, header:hover #wide-header>svg {
         color: black;
     }
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .mn__left {
+        display: block;
+        width: 30%;
+        background-image: url(../img/elephants.webp);
+        transition: width 2s 500ms;
+    } 
+    .mn__middle {
+        width: 60%;
+    }
+    .mn__right {
+        display: block;
+        background-image: url(../img/machu.jpg);
+        width: 30%;
+        transition: width 2s 400ms;
+    }  
+
+    .mn__left:hover, .mn__right:hover {
+        width: 80%;
+    }
+
+    #before-footer {
+        height: 120px;
+    }
+    #news-form {
+        padding-top: 30px;
+    }
+    #mountains {
+        margin-top: 1px;
+        width: fit-content
+    }
 }
+
