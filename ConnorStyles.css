@@ -63,7 +63,7 @@ header:hover .header-icons {
 
 .mn {
     height: 100vh;
-    background-image: url(../img/sydney.jpg);
+    background-image: url(../images/sydney.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -299,7 +299,7 @@ footer {
     .mn__left {
         display: block;
         width: 30%;
-        background-image: url(../img/elephants.webp);
+        background-image: url(../images/elephants.webp);
         transition: width 2s 500ms;
     } 
     .mn__middle {
@@ -307,7 +307,7 @@ footer {
     }
     .mn__right {
         display: block;
-        background-image: url(../img/machu.jpg);
+        background-image: url(../images/machu.jpg);
         width: 30%;
         transition: width 2s 400ms;
     }  
