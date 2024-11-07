@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 header:hover {
@@ -23,7 +24,7 @@ header:hover {
 }
 
 header:hover .header-icons {
-    color: black;
+    color: white;
 }
 
 #wide-header {
@@ -56,14 +57,19 @@ header:hover .header-icons {
 .header-icons {
     height: 2.2rem;
     width: 2.2rem;
-    color: white;
+    color: black;
 }
 
 /* HEADER END  */
 
+/* CONNORHOMEPAGE START */
+main {
+    margin-top: -70px;
+}
+
 .mn {
     height: 100vh;
-    background-image: url(../images/sydney.jpg);
+    background-image: url(./image/sydneyConnor.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -108,6 +114,221 @@ header:hover .header-icons {
 .btn__inspirez {
     margin-top: 1rem;
 } 
+
+/* CONNORHOMEPAGE END */
+
+/* NAV PAGE START */
+
+#nav-main {
+    margin-top: 0;
+}
+
+#nav-body {
+    min-height: 100vh;
+    background-color: var(--luxurlygreen);
+}
+
+#nav-header {
+    margin-bottom: 1rem;
+}
+
+#nav-x {
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+#nav-right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 15px;
+}
+
+#nav-right>a>svg, #nav-right>svg  {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: black;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 10px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+#nav-links>a {
+    color: black;
+    text-decoration: none;
+}
+
+#big-logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 0 auto;
+}
+
+/* NAV PAGE END */
+
+/* PAGEVOYAGES START */
+
+#main-voyages {
+    margin-top: 0;
+    width: 100%;
+    
+}
+
+h1 {
+    height: fit-content;
+    text-align: center;
+}
+
+#sydney-title {
+    color: black;
+    text-decoration-color: white;
+    text-decoration: none;
+  
+}
+
+#video-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#koala-vid {
+    margin: 0 auto 0 auto;
+}
+
+#aus-article, #art-sydney {
+    width: 300px;
+    margin: 1rem auto 1rem auto;
+    text-align: center;
+}
+
+.personalise {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+#inspirez-moi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#filter-div {
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 5px;;
+}
+#fd-one { 
+    width: 20px;
+    border: 1px solid black;
+    margin: 8px auto 3px auto;
+}
+#fd-two {
+    width: 13px;
+    border: 1px solid black;
+    margin: 3px auto 3px auto;
+}
+#fd-three {
+    width: 7px;
+    border: 1px solid black;
+    margin: 3px auto 3px auto;
+}
+
+#nos-it {
+    font-size: 1.5rem;
+}
+
+#btn-div {
+    display: none
+}
+
+#sydney-img {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+#voy-info {
+    width: 300px;
+    background-color: var(--luxurlygreen);
+    margin: 3px auto 3px auto;
+    padding: 5px 0 5px 0;
+}
+
+#voy-info>p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#icon-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 1rem 0 3rem 0;
+}
+
+#icon-div>img {
+    width: 30px;
+    height: 30px;
+}
+
+
+  
+/* .card {
+    position: relative;
+    top: 500px;
+    right: 520px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+  
+.card-content {
+    
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-content {
+    transform: rotateY( 180deg );
+    transition: transform 0.5s;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    color: black;
+    transform: rotateY( 180deg );
+} */
+
+/* PAGEVOYAGES END */
+
+
 
 /* FOOTER START */
 
@@ -224,6 +445,90 @@ footer {
     main {
         margin-top: -80px;
     }
+    #main-voyages {
+        margin-top: 0;
+        width: 100%;
+        
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    
+    #koala-vid {
+        width: 500px;
+        height: 500px;
+    }
+    
+    #aus-article, #art-sydney {
+        width: 500px;
+    }
+    
+    
+    #inspirez-moi {
+        gap: 40px;
+    }
+    
+    #filter-div {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    #fd-one { 
+        width: 40px;
+        border: 1px solid black;
+        margin: 16px auto 6px auto;
+    }
+    #fd-two {
+        width: 23px;
+        border: 1px solid black;
+        margin: 6px auto 6px auto;
+    }
+    #fd-three {
+        width: 13px;
+        border: 1px solid black;
+        margin: 6px auto 6px auto;
+    }
+    
+    #nos-it {
+        font-size: 2rem;
+    }
+    
+    #sydney-img {
+        height: 500px;
+        width: 500px;
+    }
+    
+    #voy-info {
+        width: 300px;
+        background-color: var(--luxurlygreen);
+        margin: 3px auto 3px auto;
+        padding: 5px 0 5px 0;
+    }
+    
+    #voy-info>p {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    #icon-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 1rem 0 3rem 0;
+    }
+    
+    #icon-div>img {
+        width: 30px;
+        height: 30px;
+    }
     footer {
         height: 300px;
     }
@@ -266,7 +571,6 @@ footer {
     }   
     #wide-header {
         display: contents;
-        border: 2px solid white;
     }
     nav {
         position: absolute;
@@ -277,20 +581,20 @@ footer {
         left: 20%;
     }
     nav>a {
-        color: white;
+        color: black;
         text-decoration: none;
         font-size: 1.5rem;
     }
-    #wide-header>svg {
-        color: white;
+    #wide-header>a>svg, #wide-header>svg {
+        color: black;
         width: 3rem;
         height: 3rem;
         margin-right: 3rem;
     }
-    header:hover nav>a, header:hover #wide-header>svg {
-        color: black;
+    header:hover nav>a, header:hover #wide-header>svg, header:hover #wide-header>a>svg {
+        color: white;
     }
-    main {
+    #main-homepage {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -299,7 +603,7 @@ footer {
     .mn__left {
         display: block;
         width: 30%;
-        background-image: url(../images/elephants.webp);
+        background-image: url(./image/elephants.webp);
         transition: width 2s 500ms;
     } 
     .mn__middle {
@@ -307,7 +611,7 @@ footer {
     }
     .mn__right {
         display: block;
-        background-image: url(../images/machu.jpg);
+        background-image: url(./image/machu.jpg);
         width: 30%;
         transition: width 2s 400ms;
     }  
@@ -315,7 +619,68 @@ footer {
     .mn__left:hover, .mn__right:hover {
         width: 80%;
     }
+    h1 {
+        font-size: 3rem;
+    }
+    
+    
+    #koala-vid {
+        width: 800px;
+    }
+    
+    #aus-article, #art-sydney {
+        width: 800px;
+        font-size: 2rem;
+    }
+    
+    
+    
+    
+    #filter-div {
+        display: none;
+    }
+    
+    #nos-it {
+        font-size: 2rem;
+    }
 
+    #inspirez-moi {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #btn-div {
+        width: 800px;
+        margin: -20px auto 2rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    
+    #sydney-img {
+        width: 800px;
+    }
+    
+    #voy-info {
+        width: 500px;
+        margin: 30px auto 3px auto;
+    }
+    
+    #voy-info>p {
+        font-size: 1.5rem;
+    }
+    
+    #icon-div {
+        gap: 50px;
+        margin: 1.5rem 0 3rem 0;
+    }
+    
+    #icon-div>img {
+        width: 50px;
+        height: 50px;
+    }
     #before-footer {
         height: 120px;
     }
