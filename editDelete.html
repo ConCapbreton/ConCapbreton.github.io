@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Record, map and analyse all of your mushroom, plants, trees and other foraging discoveries and finds">
+    <link href="https://fonts.cdnfonts.com/css/lucida-handwriting-std" rel="stylesheet">
+    <link rel="icon" href="./images/FORAGERBROWSERICON.webp" type="image/webp">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="editDelete.js" defer ></script>
+    <title>Edit and Delete</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header-logo" src="./images/COLOURLOGORED.webp" alt="Foragers Logo" height="66" width="66">
+        <div class="hamburger">
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+        </div>
+        <nav>
+            <button class="nav-btn"><a href="./newentry.html">New Entry</a></button>
+            <button class="nav-btn"><a href="./foraged.html">Foraged</a></button>
+            <button class="nav-btn"><a href="./map.html">Map</a></button>
+            <button class="nav-btn">Contact</button>
+        </nav>
+        <div id="hamburger-nav-div"></div>
+    </header>
+    <main>
+        <div class="main-div">
+            <h1 id="edit-delete-title"></h1>
+            <p class="messages" id="edit-delete-message"></p>
+            <!-- EDIT MUSHRROM -->
+            <form class="new-entry-form">
+                <div class="new-entry-div-exterieur">
+                    <div class="image-div">
+                        <svg id="svg-pic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+                            <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                        </svg>
+                        <p id="filename-p"></p>
+                        <!-- <img src="" alt="Uploaded picture" id="newentry-image"> THIS IMG ELEMENT WILL BE NEEDED ONCE THE BACKEND IS IN PLACE AND FILES CAN BE UPLOADED-->
+                        <input id="file-input" type="file" name="file-input" accept=".jpg, .jpeg, .png">
+                        <label id="new-entry-icon-text" for="file-input">Click to change the photo</label>
+                    </div>
+                    <div class="new-entry-div">
+                        <label class="column-one" for="name">Name:</label>
+                        <input class="column-two" type="text" id="name" name="name" placeholder="Name" maxlength="20" required>
+                        <label for="species">Species:</label>
+                        <select id="species" class="column-two" required>
+                            <option>Scientific name</option>
+                            <option>Boletus edulis Bull</option>
+                            <option>Cantharellus cibarius</option>
+                            <option>Craterellus tubaeformis</option>
+                            <option>Hydnum repandum</option>
+                            <option>Hydnum rufescens</option>
+                            <option>Other</option>
+                        </select>
+                        <label class="column-one" for="latitude">Latitude:</label>
+                        <input class="column-two" type="number" id="latitude" name="latitude" placeholder="Latitude" maxlength="6" required>
+                        <label class="column-one" for="longitude">Longitude:</label>
+                        <input class="column-two" type="number" id="longitude" name="Longitude" placeholder="Longitude" maxlength="6" required>
+                        <label class="column-one" for="date">Date:</label>
+                        <input class="column-two" type="date" id="date" name="date" required>
+                        <label class="column-one" for="time">Time:</label>
+                        <input class="column-two" type="time" id="time" name="time">
+                        <label class="column-one" for="text-area">Comments:</label>
+                        <textarea class="column-two" id="text-area" name="text-area" maxlength="50"></textarea>
+                    </div>
+                </div>
+                <input class="save-btn" type="submit" id="newentry-save-btn" value="Save">
+            </form>
+            <!-- DELETE MUSHRROM -->
+            <div class="foraged-div">
+                <div class="foraged-image-div">
+                    <svg id="svg-pic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+                        <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                    </svg>
+                    <!-- <img src="" alt="Uploaded picture" id="newentry-image"> THIS IMG ELEMENT WILL BE NEEDED ONCE THE BACKEND IS IN PLACE AND FILES CAN BE UPLOADED-->
+                    <p id="filename-p-delete"></p>    
+                </div>
+                <div class="foraged-div-two">
+                    <p class="column-one">Name:</p>
+                    <p class="column-two" id="name-delete"></p>
+                    <p class="column-one">Species:</p>
+                    <p class="column-two" id="species-delete"></p>
+                    <p class="column-one">Latitude:</p>
+                    <p class="column-two" id="latitude-delete"></p>
+                    <p class="column-one">Longitude:</p>
+                    <p class="column-two" id="longitude-delete"></p>
+                    <p class="column-one">Date:</p>
+                    <p class="column-two" id="date-delete"></p>
+                    <p class="column-one">Time:</p>
+                    <p class="column-two" id="time-delete"></p>
+                    <p class="column-one">Comments:</p>
+                    <p class="column-two" id="text-area-delete"></p>
+                </div>
+                <div class="foraged-btn-div">
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>@Copyright 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,568 @@
+@import url('https://fonts.cdnfonts.com/css/lucida-handwriting-std');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Lucida Handwriting Std', sans-serif;
+}
+
+body {
+    --forager-red: #b94d4d;
+    --forager-orange: #ffbc6c;
+    --forager-white: #e8e7e7;
+}
+
+/* START HEADER / FOOTER */
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--forager-red);
+    display: flex;
+    flex-direction: row;
+    gap: calc(100% - 170px)
+}
+
+.header-logo {
+    margin: 2px 0 0 1rem;
+}
+
+.hamburger {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+    padding-top: 5px;
+}
+
+.ham-line {
+    border: 3px solid black;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#hamburger-nav-div {
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 10px 30px 10px 30px;
+    right: 0;
+    background-color: var(--forager-red);
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+#hamburger-nav-div>a {
+    color: var(--forager-white);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#hamburger-nav-div>a:active, #close-hamburger:active {
+    color: var(--forager-orange);
+    text-decoration: underline;
+}
+
+#close-hamburger {
+    width: 100%;
+    background-color: var(--forager-red);
+    border: none;
+    text-align: right;
+    color: var(--forager-white);
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: none;
+}
+
+footer {
+    height: 45px;
+    width: 100%;
+    background-color: var(--forager-red);
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+/* END HEADER / FOOTER */
+
+/* START HOME PAGE */
+
+main {
+    background-color: var(--forager-white);
+}
+
+.main-div {
+    padding-top: 1rem;
+    min-height: calc(100vh - 115px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.messages {
+    width: 100%;
+    text-align: center;
+}
+
+.button-div {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+button, input[type="submit"] {
+    width: 130px;
+    height: 40px;
+    background-color: var(--forager-white);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.login-btn {
+    border: 4px solid var(--forager-red);
+    display: block;
+}    
+
+.login-btn:hover {
+    background-color: var(--forager-orange);
+}
+
+.login-btn>a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.signup-btn {
+    border: 4px solid var(--forager-orange);
+}
+
+.body-logo {
+    display: block;
+    width: 290px;
+    padding-top: 1rem;
+    margin: 0 auto 0 auto;
+}
+
+hr {
+    width: 50%;
+    max-width: 400px;
+    margin: 1rem auto 0.5rem auto;
+}
+
+/* END HOME PAGE */
+
+/* START NEW ENTRY */
+
+.new-entry-form {
+    height: 430px;
+}
+
+.new-entry-div-exterieur {
+    width: 310px;
+    height: 360px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto 0 auto;
+    background-color: var(--forager-orange);
+}
+
+.image-div, .foraged-image-div {
+    border: 2px solid var(--forager-red);
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    width: 300px;
+    margin: 3px auto 0 auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#svg-pic {
+    width: 50px;
+    height: 50px;
+}
+
+#file-input {
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.new-entry-div {
+    width: 300px;
+    margin: 5px auto 0 auto;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 105px 185px;
+    gap: 3px;
+}
+
+.column-one {
+    grid-column: 1;
+}
+
+.column-two {
+    grid-column: 2;
+    border: var(--forager-orange);
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    border: 4px solid var(--forager-orange);
+    margin: 1rem auto 1rem auto; 
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--forager-orange);
+}
+
+/* END NEW ENTRY */
+
+/* START FORAGED */
+
+#filter-btn {
+    display: block;
+    border: var(--forager-red) 4px solid;
+    margin: 1rem auto 1rem auto; 
+}
+
+#filter-div {
+    display: none;
+    grid-template-columns: 1fr, 1fr;
+    width: 95%;
+    max-width: 350px;
+    gap: 5px;
+    margin: 0 auto 0.5rem auto;
+}
+
+#filter-div>label {
+    grid-column: 1;
+}
+
+#filter-div>input {
+    grid-column: 2;
+    border: var(--forager-orange) 2px solid;
+    border-radius: 10px;
+    width: 190px;
+}
+
+#filter-hr {
+    width: 200px;
+    margin: 0.5rem auto 1rem auto;
+}
+
+#foraged-mushrooms {
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+    margin: 0 auto 0 auto;
+    max-width: 1330px;
+}
+
+.foraged-div {
+    width: 310px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto 1.5rem auto;
+    background-color: var(--forager-orange);
+    
+}
+
+.foraged-div-two {
+    margin: 0 auto 0 auto;
+    padding: 5px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 105px 190px;
+    gap: 3px;
+}
+
+.foraged-div-two>p {
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.mushroom-photo {
+    display: block;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    margin: 3px auto 0 auto;
+    object-fit: cover;
+}
+
+.foraged-btn-div {
+    width: 100%;
+    margin: 0.5rem auto 0.5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.edit-btn {
+    margin-right: 10px;
+    border: 4px solid var(--forager-white);
+    background-color: white;
+}
+
+.edit-btn>a {
+    text-decoration: none;
+}
+
+.delete-btn>a {
+    text-decoration: none;
+    color: black;
+}
+
+.edit-btn:hover {
+    background-color: var(--forager-white);
+}
+
+.delete-btn, input[class="delete-btn"] {
+    margin-left: 10px;
+    border: 4px solid var(--forager-red);
+    
+}
+
+.delete-btn:hover, input[class="delete-btn"]:hover {
+    background-color: var(--forager-red);
+}
+
+/* END FORAGED */
+
+/* START MAP */
+
+#map-div {
+    width: 95%;
+    margin: 0 auto 0 auto;
+}
+
+#map-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.map-filter-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin: 0 auto 0 auto;
+    gap: 5px;
+    font-size: 0.9rem;;
+}
+
+#map-name {
+    text-align: right;
+    padding-right: 2.5%;
+}
+
+#map-name-input {
+    margin-left: 0;
+    max-width: 190px;    
+}
+
+.start-end {
+    text-align: center;
+}
+
+.map-filter-div>input, #map-name-species>input {
+    border: var(--forager-orange) 2px solid;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 220px;
+    margin: 0 auto 0 auto;
+}
+
+.column-one {
+    grid-column: 1;
+}
+.column-two {
+    grid-column: 2;
+}
+.label {
+    grid-row: 2;
+}
+
+.show-btn {
+    border: 4px solid var(--forager-red);
+    display: block;
+    font-size: 0.9rem;
+    margin: 1rem auto 0.5rem auto;
+}
+
+/* END MAP */
+
+/* START EDIT DELETE */
+
+#edit-delete-message {
+    display: none;
+}
+/* END EDIT DELETE */
+
+/* MEDIA QUERIES */
+/* HEIGHT */
+@media (min-width: 550px) and (min-height: 800px) {
+    .new-entry-form {
+        height: 600px;
+    }
+    .new-entry-div-exterieur {
+        height: 465px;
+        width: 450px;
+    }
+    .image-div {
+        width: 98%;
+        height: 230px;
+    }
+    #file-input {
+        width: 50%;
+    }
+    .new-entry-div {
+        margin-top: 7px;
+        gap: 7px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* WIDTH */
+@media (min-width: 475px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .button-div {
+        gap: 15%;
+    }
+    .body-logo {
+        width: 400px;
+    }
+    #filter-btn {
+        display: none;
+    }
+    #filter-div {
+        display: grid;
+        margin-top: 1rem;
+    }
+    #map-img {
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 90px;
+        gap: 0;
+    }
+    .header-logo {
+        margin-top: 3px;
+        height: 84px;
+        width: 84px;
+    }
+    nav {
+        height: 100%;
+        width: calc(100vw - 106px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-btn {
+        width: 155px;
+        height: 50px;
+        background-color: var(--forager-red);
+        border: 4px solid var(--forager-orange);
+        font-size: 1.3rem;
+        color: var(--forager-white);
+        border-radius: 50px;
+    }
+    .nav-btn:hover {
+        background-color: var(--forager-white);
+        color: var(--forager-red);
+    }
+    .nav-btn:hover>a {
+        color: var(--forager-red);
+    }
+    .nav-btn>a{
+        text-decoration: none;
+        color: var(--forager-white);
+    }
+    .hamburger {
+        display: none;
+    }
+    .main-div {
+        min-height: calc(100vh - 135px);
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    button {
+        width: 220px;
+        height: 60px;
+        font-size: 2rem;
+    }    
+    #filter-div {
+        font-size: 1.5rem;
+        max-width: 450px;
+        gap: 10px;
+    }
+    .edit-btn, .delete-btn {
+        width: 130px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    #foraged-mushrooms {
+        width: 700px;
+    }
+    #map-img {
+        height: 450px;
+    }
+    .map-filter-div, .map-filter-div>input, .show-btn {
+        font-size: 1.5rem;
+    }
+    #map-name-input {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #foraged-mushrooms {
+        width: 1024px;
+    }
+    .map-filter-div {
+        margin: 1rem auto 1 rem auto;
+    }
+}
+
+@media (min-width: 1536px) {
+    #foraged-mushrooms {
+        width: 1500px;
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "mushrooms": [
+        {
+            "id": 1,
+            "file": "Picture of mushroom 1",
+            "name": "Cepe de Bordeaux",
+            "species": "Boletus edulis Bull",
+            "latitude": 433732,
+            "longitude": 126535,
+            "date": "2020-09-09",
+            "time": "16:34",
+            "comment": "Found after rain by an oak."
+        },
+        {
+            "id": 2,
+            "file": "Picture of mushroom 2",
+            "name": "Girolle",
+            "species": "Cantharellus cibarius",
+            "latitude": 433732,
+            "longitude": 126535,
+            "date": "2021-09-09",
+            "time": "16:34",
+            "comment": "Hundreds of Girolles!"
+        },
+        {
+            "id": 3,
+            "file": "Picture of mushroom 3",
+            "name": "Chanterelle en tube",
+            "species": "Craterellus tubaeformis",
+            "latitude": 433732,
+            "longitude": 126535,
+            "date": "2022-09-09",
+            "time": "16:34",
+            "comment": "First of the season, only one"
+        },
+        {
+            "id": 4,
+            "file": "Picture of mushroom 4",
+            "name": "Pied-de-mouton",
+            "species": "Hydnum repandum",
+            "latitude": 433732,
+            "longitude": 126535,
+            "date": "2023-09-09",
+            "time": "16:34",
+            "comment": "Surrounded by cork trees"
+        },
+        {
+            "id": 5,
+            "file": "Picture of mushroom 5",
+            "name": "Pied-de-mouton roussissant",
+            "species": "Hydnum Rufescens",
+            "latitude": 433732,
+            "longitude": 126535,
+            "date": "2024-09-09",
+            "time": "16:34",
+            "comment": "Almost missed this one!"
+        }
+        
+    ]
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Record, map and analyse all of your mushroom, plants, trees and other foraging discoveries and finds">
+    <link href="https://fonts.cdnfonts.com/css/lucida-handwriting-std" rel="stylesheet">
+    <link rel="icon" href="./images/FORAGERBROWSERICON.webp" type="image/png">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./map.js" defer></script>
+    <title>Map</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header-logo" src="./images/COLOURLOGORED.webp" alt="Foragers Logo" height="66" width="66">
+        <div class="hamburger">
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+        </div>
+        <nav>
+            <button class="nav-btn"><a href="./newentry.html">New Entry</a></button>
+            <button class="nav-btn"><a href="./foraged.html">Foraged</a></button>
+            <button class="nav-btn"><a href="./map.html">Map</a></button>
+            <button class="nav-btn">Contact</button>
+        </nav>
+        <div id="hamburger-nav-div"></div>
+    </header>
+    <main>
+        <div class="main-div">
+            <h1>Map</h1>
+            <div id="map-div">
+                <img id="map-img" src="./images/ExampleMap.webp" alt="https://developers.google.com/codelabs/maps-platform/maps-platform-101-react-js#0">  
+            </div>
+            <form action="submit">
+                <div class="map-filter-div filter-elements">            
+                    <label class="column-one" id="map-name" for="map-name-input">Name or Species:</label>
+                    <input class="column-two" id="map-name-input" type="text" name="name-or-species" placeholder="Name or Species">
+                    <p class="column-one start-end">Start:</p>
+                    <p class="column-two start-end">End:</p>
+                    <label class="label" for="start-date" aria-label="start-date"></label>
+                    <input class="column-one" type="date" id="start-date" name="start-date">
+                    <label class="label" for="end-date" aria-label="end-date"></label>
+                    <input class="column-two" type="date" id="end-date" name="end-date">
+                    <label class="label" for="start-time" aria-label="start-time"></label>
+                    <input class="column-one" type="time" id="start-time" name="start-time">
+                    <label class="label" for="end-time" aria-label="end-time"></label>
+                    <input class="column-two" type="time" id="end-time" name="end-time">
+                </div>
+                <button type="submit" class="show-btn">Show on map!</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>@Copyright 2024</p>
+    </footer>
+</body>
+</html>
