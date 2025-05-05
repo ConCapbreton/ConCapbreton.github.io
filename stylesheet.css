@@ -502,6 +502,9 @@ input[type="submit"]:hover {
         font-size: 1.3rem;
         color: var(--forager-white);
         border-radius: 50px;
+        place-content: center;
+        text-align: center;
+        text-decoration: none;
     }
     .nav-btn:hover {
         background-color: var(--forager-white);
